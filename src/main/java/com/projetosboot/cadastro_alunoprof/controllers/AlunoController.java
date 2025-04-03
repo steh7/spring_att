@@ -43,7 +43,7 @@ public class AlunoController {
         }
 
         alunos.add(aluno);
-        return ResponseEntity.status(201).body(Map.of(
+        return ResponseEntity.status(201).body(Map.of( //Requisição foi bem-sucedida e um novo recurso foi criado. 
                 "success", "Aluno cadastrado com sucesso!",
                 "aluno", aluno
         ));
@@ -63,7 +63,7 @@ public class AlunoController {
             ));
         }
 
-        return ResponseEntity.status(404).body(Map.of(
+        return ResponseEntity.status(404).body(Map.of( //404 Not Found: O servidor não encontrou a representação atual do recurso solicitado 
                 "error", "Aluno não encontrado!",
                 "message", "Não há aluno cadastrado com o ID fornecido."
         ));
