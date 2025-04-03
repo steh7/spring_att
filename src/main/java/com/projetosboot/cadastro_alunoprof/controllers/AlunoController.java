@@ -16,7 +16,7 @@ import java.util.Optional;
 public class AlunoController {
 
     // Lista para armazenar os alunos
-    private static final List<Aluno> alunos = new ArrayList<>();
+    private static final List<User> alunos = new ArrayList<>();
 
     // Endpoint para listar todos os alunos
     @GetMapping("/alunos")
